@@ -9,5 +9,4 @@ public interface MessageRepository extends CrudRepository<Message, Integer> {
     @Query("select m from Message m where m.message like concat('%', ?1, '%')")
     List<Message> findByMessageContains(String message);
 
-
 }
