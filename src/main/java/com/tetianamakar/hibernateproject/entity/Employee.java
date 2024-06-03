@@ -1,4 +1,4 @@
-package com.tetianamakar.hibernateproject;
+package com.tetianamakar.hibernateproject.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

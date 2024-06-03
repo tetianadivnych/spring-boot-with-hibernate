@@ -1,8 +1,12 @@
-package com.tetianamakar.hibernateproject;
+package com.tetianamakar.hibernateproject.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "message")
 public class Message {
 
@@ -17,17 +21,10 @@ public class Message {
     public Message() {
     }
 
-    public Message( String message) {
+    public Message(String message) {
         this.message = message;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     @Override
     public String toString() {
